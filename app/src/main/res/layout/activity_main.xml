@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/goal_budget_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your goal budget"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/daily_saved_edit_text"
+        android:layout_below="@id/goal_budget_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter how much you saved today"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_below="@id/daily_saved_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"/>
+
+    <TextView
+        android:id="@+id/remaining_budget_text_view"
+        android:layout_below="@id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining budget:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
